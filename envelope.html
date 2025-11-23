@@ -272,8 +272,6 @@
   </head>
 
   <body>
-    <audio id="bgm" src="music.mp3"></audio>
-
     <!-- ======================== HTML ======================== -->
     <div class="container">
       <div class="contactdiv">
@@ -285,8 +283,7 @@
 
         <div class="paperbig">
           <span class="exit"><i class="fa fa-times"></i></span>
-          <h3>ALOOOOOO👋🏼👋🏼👋🏼👋🏼👋🏼</h3>
-
+          <!-- <h3>ALOOOOOO👋🏼👋🏼👋🏼👋🏼👋🏼</h3> -->
           <!-- FORM -->
           <div class="valentine-container" style="margin-top: 20px">
             <h1>Please Enter Your Name</h1>
@@ -364,42 +361,22 @@
       function greetUser() {
         let userName = document.getElementById("userName").value;
         let greetingMessage = document.getElementById("greetingMessage");
-        let bgm = document.getElementById("bgm");
 
-        let additionalText = `Hey, My heart has been whispering something to me, and I think it’s finally time to tell you..... (,,>﹏<,,)
+        let additionalText = `i'm sending this loooonggg message cuz i need to tell u somethin' yang bikin aku galau beberapa waktu terakhir, ini bakal awkward bangettt wkwkwk, agak mengejutkan dan tarak tak dung, buttt yappp, i have crush on u.
 
-I just can’t stop thinking about how amazing you are.
-You’re honestly so attractive,
-but.............
-it’s more than just that.
-
-There’s something about you that keeps me thinking about you all the time.
-
-Hmmm.
-hmmmmmm..
-Uhmmmmmmmmm...
-                I LIKE YOU 🥰💖
-
-For so many reasons.
-I like your flaws, your imperfections, and the way they make you so perfectly you. 💖
-I love your personality, your vibe, and how you just light up everything around you. 💖
-Your style is effortless, and your smile... it just makes everything better.💖
-
-I made this code just to show you how deeply I’m in love with you. Every line of it reflects how I feel.🥰
-
-But no pressure, okay?
-You don’t have to feel the same way.
-I just needed to get this off my chest for my own peace of mind.
-Take care.😊💖`;
+aku gamau maksa apa apa, cuman pengen jujur aja sama kamu dan aku sendiri, kalo kamu ngerasa hal yang sama aku seneng bangettt, but if u don't like me back it's okayyy, i know this might be come as surprise. apapun itu, jangan jadi canggung karena ini yaaa, still be friend syaaaa.`;
 
         if (userName.trim() !== "") {
-          bgm.play(); // <<-- Musik mulai setelah submit
-
-          typeWriter(greetingMessage, `Hello, ${userName}!`, 80, function () {
-            setTimeout(function () {
-              typeWriter(greetingMessage, additionalText, 35);
-            }, 1000);
-          });
+          typeWriter(
+            greetingMessage,
+            `Alooooo ${userName} 👋🏼👋🏼👋🏼👋🏼👋🏼`,
+            80,
+            function () {
+              setTimeout(function () {
+                typeWriter(greetingMessage, additionalText, 35);
+              }, 1000);
+            }
+          );
 
           greetingMessage.style.display = "block";
           greetingMessage.style.backgroundColor = "transparent";
